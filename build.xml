@@ -355,7 +355,7 @@
 			<arg value="/libpath:${library.x86}" />
 			<arg value="/libpath:${library.x86.platformSDK}" />
 			<arg value="/libpath:${library.x86.atl}" />
-			<arg value="${JDK}\lib\jvm.lib" />
+			<arg value="${JDK}\jdk\lib\jvm.lib" />
 			<arg value="${release.dir.x86.cpp}/*obj"/>
 		</exec>
 		<exec executable="${manifestool.x86}"  dir="${release.dir.x86.cpp}" failonerror="true">
@@ -381,7 +381,7 @@
 			<arg value="/libpath:${library.x64}" />
 			<arg value="/libpath:${library.x64.platformSDK}" />
 			<arg value="/libpath:${library.x64.atl}" />
-			<arg value="${JDK}\lib\jvm.lib" />
+			<arg value="${JDK}\jdk\lib\jvm.lib" />
 			<arg value="${release.dir.x64.cpp}/*.obj" />
 		</exec>
 		<exec executable="${manifestool.x86}"  dir="${release.dir.x64.cpp}" failonerror="true">
